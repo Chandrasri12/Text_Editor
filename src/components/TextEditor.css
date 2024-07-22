@@ -1,0 +1,92 @@
+:root {
+  --font-family: 'Arial, sans-serif';
+  --text-color: #333;
+  --editor-bg-color: #f9f9f9;
+  --border-color: #ccc;
+  --button-bg-color: #007BFF;
+  --button-text-color: #fff;
+  --button-hover-bg-color: #0056b3;
+  --button-hover-text-color: #fff;
+  --button-border-radius: 5px;
+}
+
+.text-editor-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px;
+}
+
+.select-container {
+  display: flex;
+  justify-content: space-between;
+  width: 60%;
+  margin-bottom: 20px;
+}
+
+.select-container select, .select-container button {
+  padding: 10px;
+  margin-right: 10px;
+  font-size: 16px;
+  border-radius: var(--button-border-radius);
+  border: 1px solid var(--border-color);
+}
+
+.text-area-container {
+  position: relative;
+  width: 60%;
+}
+
+.text-area {
+  width: 100%;
+  height: 300px;
+  padding: 10px;
+  font-size: 18px;
+  font-family: var(--font-family);
+  color: var(--text-color);
+  background-color: var(--editor-bg-color);
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  resize: vertical;
+  transition: all 0.3s ease;
+}
+
+.text-area:focus {
+  outline: none;
+  border-color: #ff3c00;
+  box-shadow: 0 0 5px rgba(52, 7, 235, 0.5);
+}
+
+.button-container {
+  position: absolute;
+  bottom: -50px; /* Adjust this value to move buttons further down */
+  right: 10px;
+  display: flex;
+  gap: 10px;
+}
+
+.button-container button {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: var(--button-bg-color);
+  color: var(--button-text-color);
+  border: none;
+  border-radius: var(--button-border-radius);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.button-container button:hover {
+  background-color: var(--button-hover-bg-color);
+  color: var(--button-hover-text-color);
+}
+
+
+.reset-button
+{
+  background-color:rgb(142, 175, 142);
+}
+.save-button
+{
+  background-color:rgb(142, 175, 142);
+}
